@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page</h1>
+        <button id="themeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Part 1: Event Handling -->
+        <section id="event-section">
+            <h2>Event Handling</h2>
+            <button id="clickMe">Click Me!</button>
+            <p id="message">Try clicking the button or moving your mouse over it!</p>
+            <div id="colorBox" class="box">Hover over me!</div>
+        </section>
+
+        <!-- Part 2: Interactive Elements -->
+        <section id="interactive-section">
+            <h2>Interactive Elements</h2>
+            
+            <!-- Counter -->
+            <div class="interactive-element">
+                <h3>Counter</h3>
+                <button id="decrement">-</button>
+                <span id="counter">0</span>
+                <button id="increment">+</button>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="interactive-element">
+                <h3>FAQ</h3>
+                <div class="faq-item">
+                    <button class="faq-question">What is JavaScript? <span>+</span></button>
+                    <div class="faq-answer">
+                        <p>JavaScript is a programming language used to make web pages interactive.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What are events? <span>+</span></button>
+                    <div class="faq-answer">
+                        <p>Events are actions that happen in the browser, like clicks, key presses, or page loads.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section id="form-section">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 characters):</label>
+                    <input type="password" id="password" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formSuccess" class="success-message"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
