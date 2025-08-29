@@ -55,12 +55,12 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .dark-mode section {
     background: #333;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .box {
@@ -97,8 +97,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white; /* Always white text for better contrast */
-    background-color: #4CAF50; /* Green background to make white text visible */
+    color: white;
+    background-color: #4CAF50;
     border-radius: 4px;
     margin-bottom: 5px;
 }
