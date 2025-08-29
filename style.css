@@ -97,6 +97,10 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white; /* Always white text for better contrast */
+    background-color: #4CAF50; /* Green background to make white text visible */
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
 .dark-mode .faq-question {
